@@ -1,0 +1,128 @@
+{
+  "timestamp": "2025-11-15T05:32:24.085739",
+  "total_datasets": 3,
+  "datasets_sucesso": 0,
+  "datasets_erro": 3,
+  "detalhes": [
+    {
+      "dataset": "clientes",
+      "timestamp": "2025-11-15T05:32:24.061909",
+      "linhas_totais": 16,
+      "colunas_esperadas": 8,
+      "colunas_encontradas": 8,
+      "validacoes": {
+        "estrutura": {
+          "status": "ok",
+          "detalhes": []
+        },
+        "tipos": {
+          "status": "ok",
+          "detalhes": []
+        },
+        "valores": {
+          "status": "erro",
+          "detalhes": []
+        },
+        "completude": {
+          "status": "erro",
+          "detalhes": []
+        },
+        "chave_primaria": {
+          "status": "erro",
+          "detalhes": []
+        }
+      },
+      "sucesso": false,
+      "total_erros": 5,
+      "total_avisos": 0,
+      "erros": [
+        "Coluna 'email': 4 valores não correspondem ao padrão",
+        "Coluna 'telefone': 2 valores não correspondem ao padrão",
+        "Coluna 'nome': 2 valores nulos (obrigatória)",
+        "Coluna 'email': 2 valores nulos (obrigatória)",
+        "Chave primária: 1 registros duplicados"
+      ],
+      "avisos": [],
+      "carregamento": "sucesso"
+    },
+    {
+      "dataset": "produtos",
+      "timestamp": "2025-11-15T05:32:24.072717",
+      "linhas_totais": 20,
+      "colunas_esperadas": 7,
+      "colunas_encontradas": 7,
+      "validacoes": {
+        "estrutura": {
+          "status": "ok",
+          "detalhes": []
+        },
+        "tipos": {
+          "status": "ok",
+          "detalhes": []
+        },
+        "valores": {
+          "status": "erro",
+          "detalhes": []
+        },
+        "completude": {
+          "status": "erro",
+          "detalhes": []
+        },
+        "chave_primaria": {
+          "status": "ok",
+          "detalhes": []
+        }
+      },
+      "sucesso": false,
+      "total_erros": 4,
+      "total_avisos": 0,
+      "erros": [
+        "Coluna 'preco': 2 valores < 0.01",
+        "Coluna 'estoque': 1 valores < 0",
+        "Coluna 'nome_produto': 1 valores nulos (obrigatória)",
+        "Coluna 'categoria': 1 valores nulos (obrigatória)"
+      ],
+      "avisos": [],
+      "carregamento": "sucesso"
+    },
+    {
+      "dataset": "vendas",
+      "timestamp": "2025-11-15T05:32:24.079590",
+      "linhas_totais": 25,
+      "colunas_esperadas": 8,
+      "colunas_encontradas": 8,
+      "validacoes": {
+        "estrutura": {
+          "status": "ok",
+          "detalhes": []
+        },
+        "tipos": {
+          "status": "ok",
+          "detalhes": []
+        },
+        "valores": {
+          "status": "erro",
+          "detalhes": []
+        },
+        "completude": {
+          "status": "ok",
+          "detalhes": []
+        },
+        "chave_primaria": {
+          "status": "ok",
+          "detalhes": []
+        }
+      },
+      "sucesso": false,
+      "total_erros": 3,
+      "total_avisos": 0,
+      "erros": [
+        "Coluna 'quantidade': 2 valores < 1",
+        "Coluna 'valor_unitario': 1 valores < 0.01",
+        "Coluna 'valor_total': 3 valores < 0.01"
+      ],
+      "avisos": [],
+      "carregamento": "sucesso"
+    }
+  ]
+}
