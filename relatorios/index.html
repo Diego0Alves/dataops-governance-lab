@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Docs - TechCommerce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .info-box {
+            background: #f5f7fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .card {
+            background: white;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .card p {
+            color: #666;
+            font-size: 0.95em;
+        }
+        .metric {
+            text-align: center;
+            padding: 20px;
+        }
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .metric-label {
+            color: #666;
+            margin-top: 10px;
+        }
+        footer {
+            background: #f5f7fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e1e4e8;
+        }
+        .status-ok { color: #27ae60; }
+        .status-warning { color: #f39c12; }
+        .status-error { color: #e74c3c; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Data Docs</h1>
+            <p>TechCommerce - Qualidade de Dados</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Gerado em 17/11/2025 às 19:13:43</p>
+        </header>
+        
+        <div class="content">
+            <div class="info-box">
+                <h2>Bem-vindo ao Dashboard de Qualidade</h2>
+                <p>
+                    Este dashboard apresenta métricas consolidadas de qualidade de dados, 
+                    validações automatizadas e relatórios detalhados por dataset.
+                </p>
+            </div>
+            
+            <h2>📊 Documentação Disponível</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>✓ Relatórios por Dataset</h3>
+                    <p>Métricas detalhadas de cada fonte de dados incluindo completude, 
+                    unicidade e validade.</p>
+                </div>
+                <div class="card">
+                    <h3>✓ Validações Automatizadas</h3>
+                    <p>Resultados das expectativas de qualidade e análise de conformidade 
+                    com schemas definidos.</p>
+                </div>
+                <div class="card">
+                    <h3>✓ Histórico de Qualidade</h3>
+                    <p>Acompanhamento temporal das métricas para identificação de tendências 
+                    e padrões.</p>
+                </div>
+                <div class="card">
+                    <h3>✓ Alertas e Recomendações</h3>
+                    <p>Problemas identificados e sugestões de correção baseadas em regras 
+                    de negócio.</p>
+                </div>
+            </div>
+            
+            <h2>🎯 Próximas Etapas</h2>
+            <ul style="line-height: 1.8;">
+                <li>Revisar relatórios detalhados de cada dataset</li>
+                <li>Implementar correções para problemas identificados</li>
+                <li>Agendar reunião de governança de dados</li>
+                <li>Estabelecer SLAs de qualidade por dataset</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>Great Expectations Data Docs | TechCommerce | v1.0</p>
+        </footer>
+    </div>
+</body>
+</html>
+        

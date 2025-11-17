@@ -1,0 +1,29 @@
+{
+  "relatorio": {
+    "titulo": "Relatório Consolidado de Qualidade de Dados",
+    "data_geracao": "17/11/2025 às 19:13:44",
+    "empresa": "TechCommerce",
+    "versao": "1.0",
+    "score_geral": 97.72321428571429,
+    "datasets": [
+      {
+        "nome": "clientes",
+        "registros": 16,
+        "colunas": 8,
+        "completude": 96.875,
+        "nulidade": 3.125,
+        "duplicados": 1,
+        "timestamp": "2025-11-17T19:13:44.844901"
+      },
+      {
+        "nome": "produtos",
+        "registros": 20,
+        "colunas": 7,
+        "completude": 98.57142857142858,
+        "nulidade": 1.4285714285714286,
+        "duplicados": 0,
+        "timestamp": "2025-11-17T19:13:44.845976"
+      }
+    ]
+  }
+}
