@@ -1,0 +1,46 @@
+{
+  "relatorio": {
+    "titulo": "Relatório Consolidado de Qualidade de Dados",
+    "data_geracao": "17/11/2025 às 19:13:43",
+    "empresa": "TechCommerce",
+    "score_geral": 98.48214285714285,
+    "datasets": [
+      {
+        "dataset_nome": "clientes",
+        "timestamp": "2025-11-17T19:13:43.610937",
+        "total_registros": 16,
+        "total_colunas": 8,
+        "valores_nulos_percentual": 3.125,
+        "registros_duplicados": 1,
+        "taxa_completude": 96.875,
+        "taxa_validade": 95.0,
+        "expectativas_passadas": 7,
+        "expectativas_falhadas": 0
+      },
+      {
+        "dataset_nome": "produtos",
+        "timestamp": "2025-11-17T19:13:43.612130",
+        "total_registros": 20,
+        "total_colunas": 7,
+        "valores_nulos_percentual": 1.4285714285714286,
+        "registros_duplicados": 0,
+        "taxa_completude": 98.57142857142858,
+        "taxa_validade": 95.0,
+        "expectativas_passadas": 6,
+        "expectativas_falhadas": 0
+      },
+      {
+        "dataset_nome": "vendas",
+        "timestamp": "2025-11-17T19:13:43.613784",
+        "total_registros": 25,
+        "total_colunas": 8,
+        "valores_nulos_percentual": 0.0,
+        "registros_duplicados": 0,
+        "taxa_completude": 100.0,
+        "taxa_validade": 95.0,
+        "expectativas_passadas": 7,
+        "expectativas_falhadas": 0
+      }
+    ]
+  }
+}

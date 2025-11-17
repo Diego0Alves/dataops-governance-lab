@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Consolidado de Qualidade</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .title {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        .content {
+            padding: 40px;
+        }
+        .score-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .score-value {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .score-label {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .summary-item {
+            background: #f9fafb;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .summary-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+        .summary-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        tr:hover {
+            background: #f9fafb;
+        }
+        .recommendation {
+            background: #e8f5e9;
+            border-left: 4px solid #27ae60;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .recommendation h3 {
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #f5f7fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e1e4e8;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title">📊 Relatório de Qualidade de Dados</div>
+            <div class="subtitle">TechCommerce</div>
+            <div style="font-size: 0.9em; margin-top: 15px; opacity: 0.8;">Gerado em 17/11/2025 às 19:13:43</div>
+        </header>
+        
+        <div class="content">
+            <div class="score-box">
+                <div class="score-label">Score Geral de Qualidade</div>
+                <div class="score-value" style="color: #27ae60;">98.5%</div>
+                <div class="score-label">Baseado em 3 dataset(s)</div>
+            </div>
+            
+            <div class="summary">
+                <div class="summary-item">
+                    <div class="summary-label">Total de Registros</div>
+                    <div class="summary-value">61</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-label">Total de Colunas</div>
+                    <div class="summary-value">23</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-label">Datasets Analisados</div>
+                    <div class="summary-value">3</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-label">Validações Passadas</div>
+                    <div class="summary-value" style="color: #27ae60;">20</div>
+                </div>
+            </div>
+            
+            <h2 style="margin: 30px 0 20px;">📋 Detalhes por Dataset</h2>
+            <table>
+                <tr>
+                    <th>Dataset</th>
+                    <th>Registros</th>
+                    <th>Colunas</th>
+                    <th>Completude</th>
+                    <th>Duplicados</th>
+                    <th>✓ Passadas</th>
+                    <th>✗ Falhadas</th>
+                </tr>
+                
+            <tr>
+                <td>clientes</td>
+                <td>16</td>
+                <td>8</td>
+                <td><strong style="color: #27ae60;">96.9%</strong></td>
+                <td>1</td>
+                <td style="color: #27ae60; font-weight: bold;">7</td>
+                <td style="color: #e74c3c; font-weight: bold;">0</td>
+            </tr>
+            
+            <tr>
+                <td>produtos</td>
+                <td>20</td>
+                <td>7</td>
+                <td><strong style="color: #27ae60;">98.6%</strong></td>
+                <td>0</td>
+                <td style="color: #27ae60; font-weight: bold;">6</td>
+                <td style="color: #e74c3c; font-weight: bold;">0</td>
+            </tr>
+            
+            <tr>
+                <td>vendas</td>
+                <td>25</td>
+                <td>8</td>
+                <td><strong style="color: #27ae60;">100.0%</strong></td>
+                <td>0</td>
+                <td style="color: #27ae60; font-weight: bold;">7</td>
+                <td style="color: #e74c3c; font-weight: bold;">0</td>
+            </tr>
+            
+            </table>
+            
+            <div class="recommendation">
+                <h3>✓ Recomendações Gerais</h3>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li>Manter vigilância regular sobre os datasets com completude abaixo de 90%</li>
+                    <li>Investigar causa raiz de validações falhadas</li>
+                    <li>Estabelecer processo formal de limpeza de dados duplicados</li>
+                    <li>Documentar SLAs de qualidade por dataset</li>
+                    <li>Revisar e atualizar regras de validação mensalmente</li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Great Expectations Data Docs | TechCommerce | v1.0</p>
+            <p style="font-size: 0.85em; margin-top: 10px; color: #999;">
+                Relatório gerado automaticamente pelo Dashboard de Qualidade
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
+        

@@ -1,0 +1,21 @@
+id_produto,nome_produto,categoria,preco,estoque,data_criacao,ativo
+101,Smartphone Xyz,Eletrônicos,899.99,50,2023-01-01,True
+102,Notebook Abc,Eletrônicos,1299.99,25,2023-01-05,True
+103,Mouse Gamer,Informática,-29.99,100,2023-01-10,True
+104,Teclado Mecânico,Informática,199.99,0,2023-01-15,False
+105,Smartphone Xyz,Eletrônicos,899.99,50,2023-01-01,True
+106,Smartphone Xyz,Casa e Jardim,45.9,200,2023-01-20,True
+107,Headset Gamer,Informática,299.99,-10,2023-01-25,True
+108,Monitor 24 Pol,Eletrônicos,599.99,15,2023-02-01,True
+109,Cadeira Gamer,Móveis,799.99,8,2023-02-05,True
+110,Webcam Hd,Informática,0.0,30,2023-02-10,True
+111,Microfone Usb,Eletrônicos,149.99,25,2023-02-15,True
+112,Tablet Android,Eletrônicos,399.99,12,2023-02-20,True
+113,Carregador Wireless,Acessórios,89.99,100,2023-02-25,True
+114,Cabo Hdmi,Acessórios,25.99,500,2023-03-01,True
+115,Ssd 1Tb,Informática,299.99,20,2023-03-05,True
+116,Memória Ram 16Gb,Informática,399.99,15,2023-03-10,True
+117,Placa de Vídeo,Informática,1599.99,5,2023-03-15,True
+118,Processador Intel,Informática,899.99,10,2023-03-20,True
+119,Fonte 650W,Informática,199.99,25,2023-03-25,True
+120,Gabinete Gamer,Informática,299.99,18,2023-04-01,True

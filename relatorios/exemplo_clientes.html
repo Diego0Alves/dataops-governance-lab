@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório - clientes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px 10px 0 0;
+        }
+        .dataset-name {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        .content {
+            padding: 30px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .metric-box {
+            background: #f9fafb;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .metric-value {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #667eea;
+            margin: 10px 0;
+        }
+        .metric-label {
+            color: #666;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+        .info-section {
+            background: #f5f7fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .info-section h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+        tr:hover {
+            background: #f9fafb;
+        }
+        .progress-bar {
+            background: #e1e4e8;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.75em;
+            font-weight: bold;
+        }
+        .timestamp {
+            color: #999;
+            font-size: 0.85em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="dataset-name">clientes</div>
+            <div class="status-badge">✓ Excelente</div>
+        </header>
+        
+        <div class="content">
+            <div class="metrics-grid">
+                <div class="metric-box">
+                    <div class="metric-label">Total de Registros</div>
+                    <div class="metric-value">16</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Total de Colunas</div>
+                    <div class="metric-value">8</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Completude</div>
+                    <div class="metric-value">96.9%</div>
+                </div>
+                <div class="metric-box">
+                    <div class="metric-label">Validade</div>
+                    <div class="metric-value">95.0%</div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>📊 Taxa de Completude</h3>
+                <p>Percentual de células preenchidas (não nulas)</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 96.875%">
+                        96.9%
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-section">
+                <h3>✓ Validações</h3>
+                <table>
+                    <tr>
+                        <th>Tipo de Validação</th>
+                        <th>Resultado</th>
+                    </tr>
+                    <tr>
+                        <td>Expectativas Passadas</td>
+                        <td><strong style="color: #27ae60;">7</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Expectativas Falhadas</td>
+                        <td><strong style="color: #e74c3c;">0</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Taxa de Sucesso</td>
+                        <td>
+                            <strong>
+                                {{ (metrica.expectativas_passadas / (metrica.expectativas_passadas + metrica.expectativas_falhadas) * 100 if (metrica.expectativas_passadas + metrica.expectativas_falhadas) > 0 else 0) | int }}%
+                            </strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Registros Duplicados</td>
+                        <td><strong>1</strong></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="info-section">
+                <h3>⚙️ Detalhes Técnicos</h3>
+                <p><strong>Dataset:</strong> clientes</p>
+                <p><strong>Registros com Nulos:</strong> 3.12%</p>
+                <p><strong>Última Atualização:</strong> 2025-11-17T19:13:44.585776</p>
+            </div>
+            
+            <div class="timestamp">
+                Relatório gerado em 17/11/2025 às 19:13:44
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        
